@@ -1,5 +1,5 @@
 #pragma once
-#include "ItemPDA.h"
+#include "UGPItemPDA.h"
 
 #include "InventoryStruct.generated.h"
 
@@ -9,7 +9,7 @@ struct FItemBase
 	GENERATED_BODY()
 
 	UPROPERTY()
-	UItemPDA ItemPDA;
+	UGPItemPDA* ItemPDA;
 
 	UPROPERTY()
 	float Durability;	

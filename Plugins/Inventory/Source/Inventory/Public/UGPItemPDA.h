@@ -3,11 +3,10 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Engine//DataAsset.h"
-#include "ItemPDA.generated.h"
+#include "UGPItemPDA.generated.h"
 
 UCLASS(BlueprintType)
-class INVENTORY_API UItemPDA : public UPrimaryDataAsset
+class INVENTORY_API UGPItemPDA : public UPrimaryDataAsset
 {
 	GENERATED_BODY()
 
