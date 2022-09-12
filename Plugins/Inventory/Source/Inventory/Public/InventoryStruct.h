@@ -3,14 +3,14 @@
 
 #include "InventoryStruct.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FItemStruct
 {
 	GENERATED_BODY()
 
-	UPROPERTY()
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	UGPItemPDA* ItemPDA;
 
-	UPROPERTY()
+	UPROPERTY(BlueprintReadWrite)
 	float Durability;	
 };

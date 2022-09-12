@@ -11,4 +11,6 @@ UCLASS()
 class INVENTORY_API UGPItemPDA : public UPrimaryDataAsset
 {
 	GENERATED_BODY()
+
+	
 };
