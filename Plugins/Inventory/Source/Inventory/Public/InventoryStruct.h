@@ -1,10 +1,10 @@
 #pragma once
-#include "UGPItemPDA.h"
+#include "GPItemPDA.h"
 
 #include "InventoryStruct.generated.h"
 
 USTRUCT()
-struct FItemBase
+struct FItemStruct
 {
 	GENERATED_BODY()
 

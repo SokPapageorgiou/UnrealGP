@@ -3,13 +3,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UGPItemPDA.generated.h"
+#include "UObject/Object.h"
+#include "GPItemPDA.generated.h"
 
-UCLASS(BlueprintType)
+
+UCLASS()
 class INVENTORY_API UGPItemPDA : public UPrimaryDataAsset
 {
 	GENERATED_BODY()
-
-	UStaticMesh Mesh;
-	UTexture2D Tumbnail;
 };

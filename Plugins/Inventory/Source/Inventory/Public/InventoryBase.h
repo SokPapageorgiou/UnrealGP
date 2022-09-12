@@ -12,7 +12,7 @@ class INVENTORY_API UInventoryBase : public UActorComponent
 {
 	GENERATED_BODY()
 
-	FItemBase Item;
+	FItemStruct Item;
 	
 public:
 	// Sets default values for this component's properties
