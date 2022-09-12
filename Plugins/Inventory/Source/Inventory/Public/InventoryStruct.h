@@ -8,6 +8,9 @@ struct FItemBase
 {
 	GENERATED_BODY()
 
+	UPROPERTY()
 	UItemPDA ItemPDA;
-	float Durability;
+
+	UPROPERTY()
+	float Durability;	
 };

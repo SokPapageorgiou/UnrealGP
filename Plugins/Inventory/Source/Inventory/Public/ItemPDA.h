@@ -7,7 +7,7 @@
 #include "ItemPDA.generated.h"
 
 UCLASS(BlueprintType)
-class INVENTORY_API UItemPDA : public UDataAsset
+class INVENTORY_API UItemPDA : public UPrimaryDataAsset
 {
 	GENERATED_BODY()
 
