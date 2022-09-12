@@ -10,17 +10,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f065a519-5044-4210-a64c-0fd92d022729" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnrealGP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnrealGP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/AI/BT/BT_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Enemies/AI/BT/BT_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/AI/BT/EquipItem.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Enemies/AI/BT/EquipItem.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Enemies/AI/Decorators/IsWeaponAvailable.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Enemies/AI/Decorators/IsWeaponAvailable.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/UnrealGP/Private/GP_PathFollowingComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UnrealGP/Private/GP_PathFollowingComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/UnrealGP/Public/GP_PathFollowingComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UnrealGP/Public/GP_PathFollowingComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/UnrealGP/UnrealGP.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/UnrealGP/UnrealGP.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Inventory/Inventory.uplugin" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Inventory/Inventory.uplugin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Plugins/Inventory/Source/Inventory/Inventory.Build.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -170,6 +168,7 @@
       <workItem from="1662548684127" duration="6782000" />
       <workItem from="1662620299943" duration="4730000" />
       <workItem from="1662706531197" duration="4994000" />
+      <workItem from="1662972043756" duration="1592000" />
     </task>
     <servers />
   </component>
