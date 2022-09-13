@@ -33,3 +33,5 @@ void UInventoryBase::TickComponent(float DeltaTime, ELevelTick TickType, FActorC
 	// ...
 }
 
+TArray<FItemStruct>& UInventoryBase::GetItems() { return Items; }
+
