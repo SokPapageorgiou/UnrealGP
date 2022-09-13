@@ -20,5 +20,5 @@ public:
 	UStaticMesh* Mesh;
 
 	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category="Basic")
-	UTexture2D* Thumbnail;	
+	UTexture2D* Thumbnail;
 };
