@@ -10,7 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f065a519-5044-4210-a64c-0fd92d022729" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.UnrealGP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.UnrealGP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/Inventory/Content/UI/ItemSlot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Inventory/Content/UI/ItemSlot.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Inventory/Content/InventoryComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Inventory/Content/InventoryComponent.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugins/Inventory/Source/Inventory/Private/InventoryBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Inventory/Source/Inventory/Private/InventoryBase.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugins/Inventory/Source/Inventory/Public/InventoryBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Inventory/Source/Inventory/Public/InventoryBase.h" afterDir="false" />
     </list>
@@ -177,7 +177,7 @@
       <workItem from="1662972043756" duration="3236000" />
       <workItem from="1662975530591" duration="4444000" />
       <workItem from="1663000063117" duration="3677000" />
-      <workItem from="1663053169684" duration="7057000" />
+      <workItem from="1663053169684" duration="7740000" />
     </task>
     <servers />
   </component>

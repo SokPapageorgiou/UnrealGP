@@ -38,6 +38,7 @@ TArray<FItemStruct>& UInventoryBase::GetItems() { return Items; }
 bool UInventoryBase::AddItem(const FItemStruct& NewItem)
 {
 	Items.Add(NewItem);
+	DelegateSignature.Broadcast(NewItem);
 	return true;
 }
 

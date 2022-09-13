@@ -7,6 +7,8 @@
 #include "Components/ActorComponent.h"
 #include "InventoryBase.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FMulticastDelegateSignature, FItemStruct, ItemStruct);
+
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent), Blueprintable)
 class INVENTORY_API UInventoryBase : public UActorComponent
 {
@@ -17,6 +19,9 @@ class INVENTORY_API UInventoryBase : public UActorComponent
 public:
 	// Sets default values for this component's properties
 	UInventoryBase();
+	
+	UPROPERTY(BlueprintAssignable)
+	FMulticastDelegateSignature DelegateSignature;
 
 protected:
 	// Called when the game starts
