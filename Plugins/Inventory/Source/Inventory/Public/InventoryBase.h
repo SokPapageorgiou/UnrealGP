@@ -27,8 +27,11 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType,
 	                           FActorComponentTickFunction* ThisTickFunction) override;
 
-	UFUNCTION(BlueprintPure)
+	UFUNCTION(BlueprintCallable, BlueprintPure)
 	TArray<FItemStruct>& GetItems();
+
+	UFUNCTION(BlueprintCallable)
+	bool AddItem(const FItemStruct& NewItem);
 	
 private:
 	TArray<FItemStruct> Items;

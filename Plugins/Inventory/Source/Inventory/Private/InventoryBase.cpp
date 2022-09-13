@@ -35,3 +35,9 @@ void UInventoryBase::TickComponent(float DeltaTime, ELevelTick TickType, FActorC
 
 TArray<FItemStruct>& UInventoryBase::GetItems() { return Items; }
 
+bool UInventoryBase::AddItem(const FItemStruct& NewItem)
+{
+	Items.Add(NewItem);
+	return true;
+}
+
