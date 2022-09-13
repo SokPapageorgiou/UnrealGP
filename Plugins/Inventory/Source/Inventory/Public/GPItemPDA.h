@@ -3,7 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
 #include "GPItemPDA.generated.h"
 
 
@@ -12,5 +11,9 @@ class INVENTORY_API UGPItemPDA : public UPrimaryDataAsset
 {
 	GENERATED_BODY()
 
+public:
 	
+	UPROPERTY(BlueprintReadOnly, EditDefaultsOnly, Category="Basic")
+	FText Text;
+
 };
