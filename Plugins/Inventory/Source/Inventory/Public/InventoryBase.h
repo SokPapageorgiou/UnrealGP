@@ -21,7 +21,7 @@ public:
 	UInventoryBase();
 	
 	UPROPERTY(BlueprintAssignable)
-	FMulticastDelegateSignature DelegateSignature;
+	FMulticastDelegateSignature OnItemIsAddedToInventory;
 
 protected:
 	// Called when the game starts
@@ -37,6 +37,9 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	bool AddItem(const FItemStruct& NewItem);
+
+	UFUNCTION(BlueprintCallable)
+	void Debug();
 	
 private:
 	TArray<FItemStruct> Items;

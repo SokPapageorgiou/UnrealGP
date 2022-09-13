@@ -38,7 +38,15 @@ TArray<FItemStruct>& UInventoryBase::GetItems() { return Items; }
 bool UInventoryBase::AddItem(const FItemStruct& NewItem)
 {
 	Items.Add(NewItem);
-	DelegateSignature.Broadcast(NewItem);
+	OnItemIsAddedToInventory.Broadcast(NewItem);
 	return true;
+}
+
+void UInventoryBase::Debug()
+{
+	for (const auto item : Items)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 15, FColor::Emerald,item.ItemPDA->Text.ToString());
+	}
 }
 
