@@ -4,6 +4,9 @@
 #include "InventoryBase.h"
 
 
+#define PRINTITEM(String) GEngine->AddOnScreenDebugMessage(-1, 15, FColor::Emerald,String);
+
+
 // Sets default values for this component's properties
 UInventoryBase::UInventoryBase()
 {
@@ -46,7 +49,7 @@ void UInventoryBase::Debug()
 {
 	for (const auto item : Items)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 15, FColor::Emerald,item.ItemPDA->Text.ToString());
+		PRINTITEM(item.ItemPDA->Text.ToString());
 	}
 }
 
