@@ -41,6 +41,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void Debug();
 
+	FItemStruct CreateItem(FItemStruct NewItem);
+	
 	UPROPERTY(EditDefaultsOnly)
 	bool bDebug;
 	

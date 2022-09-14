@@ -8,6 +8,9 @@ struct FItemStruct
 {
 	GENERATED_BODY()
 
+	FItemStruct(UGPItemPDA* ItemPDA);
+	FItemStruct(UGPItemPDA* ItemPDA, float Durability);
+	
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 	UGPItemPDA* ItemPDA;
 
