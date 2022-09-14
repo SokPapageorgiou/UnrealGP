@@ -57,7 +57,7 @@ void UInventoryBase::Debug()
 
 FItemStruct UInventoryBase::CreateItem(FItemStruct NewItem)
 {
-	if(Item.ItemPDA) return FItemStruct{NewItem.ItemPDA};
+	if(NewItem.ItemPDA) return FItemStruct{NewItem.ItemPDA};
 
 	return FItemStruct{nullptr};
 }

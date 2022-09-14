@@ -8,6 +8,7 @@ struct FItemStruct
 {
 	GENERATED_BODY()
 
+	FItemStruct();
 	FItemStruct(UGPItemPDA* ItemPDA);
 	FItemStruct(UGPItemPDA* ItemPDA, float Durability);
 	
