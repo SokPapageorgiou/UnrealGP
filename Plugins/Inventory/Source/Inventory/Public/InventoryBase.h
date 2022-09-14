@@ -40,6 +40,9 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void Debug();
+
+	UPROPERTY(EditDefaultsOnly)
+	bool bDebug;
 	
 private:
 	TArray<FItemStruct> Items;
