@@ -47,7 +47,7 @@ bool UInventoryBase::AddItem(const FItemStruct& NewItem)
 
 void UInventoryBase::Debug()
 {
-	for (const auto item : Items)
+	for (const auto& item : Items)
 	{
 		PRINTITEM(item.ItemPDA->Text.ToString());
 	}
