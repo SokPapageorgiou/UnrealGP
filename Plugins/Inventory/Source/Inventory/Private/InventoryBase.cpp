@@ -45,6 +45,13 @@ bool UInventoryBase::AddItem(const FItemStruct& NewItem)
 	return true;
 }
 
+FItemStruct UInventoryBase::CreateItem(const FItemStruct& NewItem)
+{
+	if(NewItem.ItemPDA) return FItemStruct{NewItem.ItemPDA};
+
+	return FItemStruct{nullptr};
+}
+
 void UInventoryBase::Debug()
 {
 	if(!bDebug) return;
@@ -53,12 +60,5 @@ void UInventoryBase::Debug()
 	{
 		PRINTITEM(item.ItemPDA->Text.ToString());
 	}
-}
-
-FItemStruct UInventoryBase::CreateItem(FItemStruct NewItem)
-{
-	if(NewItem.ItemPDA) return FItemStruct{NewItem.ItemPDA};
-
-	return FItemStruct{nullptr};
 }
 

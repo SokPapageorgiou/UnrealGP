@@ -39,7 +39,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void Debug();
 
-	FItemStruct CreateItem(FItemStruct NewItem);
+	UFUNCTION(BlueprintCallable)
+	FItemStruct CreateItem(const FItemStruct& NewItem);
 	
 	UPROPERTY(EditDefaultsOnly)
 	bool bDebug;
