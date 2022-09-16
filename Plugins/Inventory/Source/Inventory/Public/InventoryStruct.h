@@ -16,5 +16,9 @@ struct FItemStruct
 	UGPItemPDA* ItemPDA;
 
 	UPROPERTY(BlueprintReadWrite)
-	float Durability;	
+	float Durability;
+
+	FGuid Id;
+
+	bool operator ==(FItemStruct Other) const { return this->Id == Other.Id; }
 };

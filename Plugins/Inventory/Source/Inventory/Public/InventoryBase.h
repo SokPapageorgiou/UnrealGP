@@ -19,7 +19,10 @@ public:
 	UInventoryBase();
 	
 	UPROPERTY(BlueprintAssignable)
-	FMulticastDelegateSignature OnItemIsAddedToInventory;
+	FMulticastDelegateSignature OnAddedToInventory;
+
+	UPROPERTY(BlueprintAssignable)
+	FMulticastDelegateSignature OnRemovedFromInventory;
 
 protected:
 	// Called when the game starts
@@ -37,10 +40,13 @@ public:
 	bool AddItem(const FItemStruct& NewItem);
 
 	UFUNCTION(BlueprintCallable)
-	void Debug();
+	bool RemoveItem(const FItemStruct& NewItem);
 
 	UFUNCTION(BlueprintCallable)
 	FItemStruct CreateItem(const FItemStruct& NewItem);
+
+	UFUNCTION(BlueprintCallable)
+	void Debug();
 	
 	UPROPERTY(EditDefaultsOnly)
 	bool bDebug;

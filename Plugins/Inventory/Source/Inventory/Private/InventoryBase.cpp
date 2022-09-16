@@ -41,8 +41,18 @@ TArray<FItemStruct>& UInventoryBase::GetItems() { return Items; }
 bool UInventoryBase::AddItem(const FItemStruct& NewItem)
 {
 	Items.Add(NewItem);
-	OnItemIsAddedToInventory.Broadcast(NewItem);
+	OnAddedToInventory.Broadcast(NewItem);
 	return true;
+}
+
+bool UInventoryBase::RemoveItem(const FItemStruct& Item)
+{
+	if(Items.Remove(Item) > 0)
+	{
+		OnRemovedFromInventory.Broadcast(Item);
+		return true;
+	}
+	return false;	
 }
 
 FItemStruct UInventoryBase::CreateItem(const FItemStruct& NewItem)
