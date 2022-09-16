@@ -33,6 +33,9 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType,
 	                           FActorComponentTickFunction* ThisTickFunction) override;
 
+	UFUNCTION(BlueprintCallable)
+	FItemStruct CreateItem(const FItemStruct& NewItem);
+	
 	UFUNCTION(BlueprintCallable, BlueprintPure)
 	TArray<FItemStruct>& GetItems();
 
@@ -43,8 +46,8 @@ public:
 	bool RemoveItem(const FItemStruct& NewItem);
 
 	UFUNCTION(BlueprintCallable)
-	FItemStruct CreateItem(const FItemStruct& NewItem);
-
+	bool TransferItem(UInventoryBase* ToInventory, const FItemStruct& Item);
+	
 	UFUNCTION(BlueprintCallable)
 	void Debug();
 	

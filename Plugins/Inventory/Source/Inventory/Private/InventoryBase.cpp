@@ -55,6 +55,13 @@ bool UInventoryBase::RemoveItem(const FItemStruct& Item)
 	return false;	
 }
 
+bool UInventoryBase::TransferItem(UInventoryBase* ToInventory, const FItemStruct& Item)
+{
+	if(RemoveItem(Item)) return ToInventory -> AddItem(Item);
+
+	return false;
+}
+
 FItemStruct UInventoryBase::CreateItem(const FItemStruct& NewItem)
 {
 	if(NewItem.ItemPDA) return FItemStruct{NewItem.ItemPDA};
